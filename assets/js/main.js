@@ -866,3 +866,32 @@
         preloader();
     });
 })(jQuery);
+
+
+function dynamicCurrentMenuClass(selector) {
+  let FileName = window.location.href.split("/").reverse()[0];
+
+  selector.find("li").each(function () {
+    let anchor = $(this).find("a");
+    if ($(anchor).attr("href") == FileName) {
+      $(this).addClass("current");
+    }
+  });
+  
+  selector.children("li").each(function () {
+    if ($(this).find(".current").length) {
+      $(this).addClass("current");
+    }
+  });
+  
+  if ("" == FileName) {
+    selector.find("li").eq(0).addClass("current");
+  }
+}
+
+if ($(".current-menu").length) {
+  let mainNavUL = $(".current-menu");
+  dynamicCurrentMenuClass(mainNavUL);
+}
+
+document.getElementById("footer-year").textContent = new Date().getFullYear();

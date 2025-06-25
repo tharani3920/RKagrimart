@@ -64,6 +64,9 @@
 .icon-instagram2:before {
   content: "\ea92";
 }
+.icon-youtube:before {
+  content: "\ea9d";
+}
 .icon-twitter:before {
   content: "\ea96";
 }
