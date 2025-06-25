@@ -7388,7 +7388,7 @@ a.mapboxgl-ctrl-logo {
 }
 
 .tf-animate-1 {
-  clip-path: inset(0 100% 0 0);
+  /* clip-path: inset(0 100% 0 0); */
   -webkit-transition: 0.6s cubic-bezier(0.63, 0.25, 0.25, 1);
   -khtml-transition: 0.6s cubic-bezier(0.63, 0.25, 0.25, 1);
   -moz-transition: 0.6s cubic-bezier(0.63, 0.25, 0.25, 1);
@@ -7410,7 +7410,7 @@ a.mapboxgl-ctrl-logo {
 }
 
 .tf-animate-2 {
-  clip-path: inset(0 0 100% 0);
+  /* clip-path: inset(0 0 100% 0); */
   -webkit-transition: 0.6s cubic-bezier(0.63, 0.25, 0.25, 1);
   -khtml-transition: 0.6s cubic-bezier(0.63, 0.25, 0.25, 1);
   -moz-transition: 0.6s cubic-bezier(0.63, 0.25, 0.25, 1);
@@ -12193,7 +12193,7 @@ i.fs-12 {
 
 .has-img-item {
   position: relative;
-  margin-top: 200px;
+  margin-top: 30px;
 }
 .has-img-item.mt-0 {
   margin-top: 0px;
@@ -12721,6 +12721,7 @@ i.fs-12 {
   margin-bottom: -50px;
   background-color: var(--Bg-8);
   position: relative;
+  margin-top: 200px;
 }
 .s-contact-us .image {
   border-radius: 20px;
