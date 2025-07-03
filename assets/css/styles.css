@@ -1671,15 +1671,16 @@ a.text-white {
   right: -7px;
 }
 .header .header-inner .header-right .wg-welcome {
+  display: none !important;
+
   width: 60px;
   height: 59px;
   border-radius: 50%;
   background-color: var(--Primary);
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: -webkit-flex; */
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -16793,6 +16794,9 @@ i.fs-12 {
   }
 }
 @media (max-width: 1024px) {
+  .slide-home-1 .image img {
+  height: 45vh;
+}
   .tf-topbar.style-3 .topbar-left {
     display: none;
   }
@@ -16817,6 +16821,7 @@ i.fs-12 {
   }
 }
 @media (max-width: 991px) {
+
   .tf-page-checkout {
     margin-bottom: 30px;
   }
@@ -17575,8 +17580,9 @@ i.fs-12 {
     padding: 60px 0px !important;
   }
   .s-contact-us {
-    margin-bottom: unset;
-  }
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
   .s-contact-us .section-wrap {
     top: 0;
   }
@@ -17679,7 +17685,7 @@ i.fs-12 {
     margin-bottom: 20px;
   }
   .s-why-us {
-    padding-top: 35px;
+    padding-top: 0px;
   }
   .s-why-us .main-section .content-section {
     padding-top: 10px;
@@ -17698,10 +17704,10 @@ i.fs-12 {
     margin-top: 30px;
     margin-left: 0px;
   }
-  .s-service {
-    padding-top: 100px;
-    padding-bottom: 90px;
-  }
+ .s-service {
+    padding-top: 65px;
+    padding-bottom: 50px;
+}
   .s-service .heading-section {
     padding-bottom: 0px;
   }
@@ -17804,8 +17810,11 @@ i.fs-12 {
     height: 550px;
   }
   .page-title-home-1 .slide-home-1 .content-wrap {
-    padding: 65px 15px;
+    padding: 100px 15px;
   }
+  .s-break-page {
+    height: 380px;
+}
   .blog-right-sidebar-wrap {
     margin-right: 0px;
     margin-bottom: 100px;
@@ -17814,7 +17823,10 @@ i.fs-12 {
     max-height: unset !important;
   }
   .footer {
-    padding-top: 100px;
+    padding-top: 50px;
+  }
+  .footer-inner .tf-container .row{
+    row-gap: 30px;
   }
   .footer .footer-top {
     margin-bottom: 40px;
@@ -17906,6 +17918,10 @@ i.fs-12 {
     flex-wrap: wrap;
     gap: 20px;
   }
+  .s-service .box-icon {
+    max-width: unset;
+    margin-bottom: 0px;
+}
   .order-meta-list > * {
     width: calc(50% - 10px);
   }
